@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Checkout - My Shop{% endblock %}
+
+{% block content %}
+<h1>Checkout</h1>
+
+<ul>
+    {% for item in cart %}
+        <li>{{ item.quantity }} x {{ item.product.name }} — ₹{{ item.subtotal }}</li>
+    {% endfor %}
+</ul>
+<p class="total">Total: ₹{{ cart.get_total_price }}</p>
+
+<form method="post">
+    {% csrf_token %}
+    <label for="shipping_address">Shipping Address</label>
+    <textarea name="shipping_address" id="shipping_address" required></textarea>
+    <button type="submit">Place Order</button>
+</form>
+{% endblock %}

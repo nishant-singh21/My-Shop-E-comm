@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}My Orders - My Shop{% endblock %}
+
+{% block content %}
+<h1>My Orders</h1>
+<table class="cart-table">
+    <thead><tr><th>Order</th><th>Status</th><th>Total</th><th>Date</th></tr></thead>
+    <tbody>
+        {% for order in orders %}
+        <tr>
+            <td><a href="{% url 'order_tracking' order.id %}">#{{ order.id }}</a></td>
+            <td>{{ order.get_status_display }}</td>
+            <td>₹{{ order.total_amount }}</td>
+            <td>{{ order.created_at|date:"d M Y" }}</td>
+        </tr>
+        {% empty %}
+        <tr><td colspan="4">No orders yet.</td></tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
