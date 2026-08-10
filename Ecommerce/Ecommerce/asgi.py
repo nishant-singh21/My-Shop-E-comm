@@ -1,16 +1,16 @@
 """
-ASGI config for My_Shop project.
+ASGI config for Ecommerce project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
 For more information on this file, see
-https://docs.djangoproject.com/en/6.0/howto/deployment/asgi/
+https://docs.djangoproject.com/en/6.1/howto/deployment/asgi/
 """
 
 import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'My_Shop.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Ecommerce.settings')
 
 application = get_asgi_application()
