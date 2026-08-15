@@ -143,7 +143,7 @@ h6 {
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  --background-color: #0f0000;
+  --background-color: #0d1117;
   --default-color: #ffffff;
   --heading-color: #ffffff;
   color: var(--default-color);
@@ -2901,7 +2901,12 @@ section,
 
 /*--------------------------------------------------------------
 # Contact Section
+
+}
 --------------------------------------------------------------*/
+
+
+
 .contact .info-box {
   background-color: var(--accent-color);
   color: var(--contrast-color);

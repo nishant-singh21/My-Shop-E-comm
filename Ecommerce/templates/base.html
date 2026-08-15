@@ -39,47 +39,78 @@
 <body class="index-page">
 
   <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+  <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
+    <!-- Logo -->
+    <a href="/" class="logo d-flex align-items-center me-auto">
+      <h1 class="sitename"><span>E</span>shop</h1>
+    </a>
+
+    <!-- Navigation -->
+    <nav id="navmenu" class="navmenu">
+      <ul>
+
+        <li>
+          <a href="/" class="active">Home</a>
+        </li>
+
+        <li>
+          <a href="/blog">Blog</a>
+        </li>
+
+        <li>
+          <a href="/about">About</a>
+        </li>
+
+        <li>
+          <a href="/profile">My Profile</a>
+        </li>
+
+        <li>
+          <a href="/orders">Orders</a>
+        </li>
+
+        <!-- Sign In Dropdown -->
+        <li class="dropdown">
+          <a href="#">
+            <span>Sign-In</span>
+            <i class="bi bi-chevron-down toggle-dropdown"></i>
+          </a>
+
+          <ul>
+            <li>
+              <a href="/signup">Sign Up</a>
+            </li>
+
+            <li>
+              <a href="/login">Login</a>
+            </li>
+
+            <li>
+              <a href="/logout">Logout</a>
+            </li>
+          </ul>
+        </li>
        
-        <h1 class="sitename"><span>E</span>shop</h1>
-      </a>
+        <li>
+          <a href="/cart">
+            <i class="bi bi-cart"></i> Cart
+          </a>
+        </li>
 
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="/" class="active">Home</a></li>
-          <li><a hreaf='/blog'>Blog</a></li>
-          <li><a href="/about">About</a></li>
-          
-          
-        
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">SignIn </a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
-          <li><a href="/contact">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
+        <li>
+          <li><a href="/contact" class="contact-btn">Contact</a></li>
+        </li>
 
-      <a class="btn-getstarted" href="index.html#about">Get Started</a>
 
-    </div>
-  </header>
+      </ul>
+
+      <!-- Mobile Menu -->
+      <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+    </nav>
+
+  </div>
+</header>
 
   <main class="main">
 
@@ -89,7 +120,7 @@
         <div class="row align-items-center">
           <div class="col-lg-6">
             <div class="hero-content" data-aos="fade-up" data-aos-delay="200">
-              <h2>Strategic Solutions for Business Growth</h2>
+              <h2>Welcome to <stong>Shopping Cart</stong></h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               <div class="hero-btns">
                 <a href="#contact" class="btn btn-primary">Get a Free Consultation</a>
