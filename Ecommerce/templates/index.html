@@ -1,1 +1,807 @@
 {% extends "base.html" %}
+{% block title  %}Home Page{% endblock title  %}
+
+{% block body %}
+
+
+
+<!-- ================= Portfollio ================= -->
+
+<section id="home" class="hero section">
+
+    <div class="container" data-aos="fade-up">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-6">
+
+                <div class="hero-content">
+
+                    <span class="badge bg-primary mb-3">
+                        Welcome to Our Store
+                    </span>
+
+                    <h1>
+                        Discover Products
+                        <span>You'll Love</span>
+                    </h1>
+
+                    <p>
+                        Shop the latest products at the best prices.
+                        Discover quality fashion, electronics,
+                        accessories and everything you need in one place.
+                    </p>
+
+                    <div class="mt-4">
+
+                        <a href="#products" class="btn btn-primary">
+                            Shop Now
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+
+                        <a href="#categories" class="btn btn-outline-primary ms-2">
+                            Explore Categories
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-6 text-center">
+
+                <img src="/static/assets/img/ecommerce-hero.png"
+                     class="img-fluid"
+                     alt="E-commerce Shopping">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CATEGORIES ================= -->
+
+<section id="categories" class="services section">
+
+    <div class="container section-title"
+         data-aos="fade-up">
+
+        <h2>Shop By <span>Category</span></h2>
+
+        <p>
+            Explore our popular product categories
+        </p>
+
+    </div>
+
+
+    <div class="container">
+
+        <div class="row gy-4">
+
+
+            <!-- Electronics -->
+
+            <div class="col-lg-3 col-md-6"
+                 data-aos="fade-up"
+                 data-aos-delay="100">
+
+                <article class="service-item">
+
+                    <span class="service-icon rounded-circle">
+                        <i class="bi bi-phone"></i>
+                    </span>
+
+                    <h3>
+                        <a href="#">
+                            Electronics
+                        </a>
+                    </h3>
+
+                    <p>
+                        Discover smartphones, laptops,
+                        headphones and latest gadgets.
+                    </p>
+
+                    <a href="#"
+                       class="card-action rounded-circle d-flex align-items-center justify-content-center">
+
+                        <i class="bi bi-arrow-up-right"></i>
+
+                    </a>
+
+                </article>
+
+            </div>
+
+
+            <!-- Fashion -->
+
+            <div class="col-lg-3 col-md-6"
+                 data-aos="fade-up"
+                 data-aos-delay="150">
+
+                <article class="service-item">
+
+                    <span class="service-icon rounded-circle">
+                        <i class="bi bi-bag"></i>
+                    </span>
+
+                    <h3>
+                        <a href="#">
+                            Fashion
+                        </a>
+                    </h3>
+
+                    <p>
+                        Shop trendy clothes, shoes,
+                        bags and fashion accessories.
+                    </p>
+
+                    <a href="#"
+                       class="card-action rounded-circle d-flex align-items-center justify-content-center">
+
+                        <i class="bi bi-arrow-up-right"></i>
+
+                    </a>
+
+                </article>
+
+            </div>
+
+
+            <!-- Home -->
+
+            <div class="col-lg-3 col-md-6"
+                 data-aos="fade-up"
+                 data-aos-delay="200">
+
+                <article class="service-item">
+
+                    <span class="service-icon rounded-circle">
+                        <i class="bi bi-house"></i>
+                    </span>
+
+                    <h3>
+                        <a href="#">
+                            Home & Living
+                        </a>
+                    </h3>
+
+                    <p>
+                        Make your home beautiful with
+                        our home and lifestyle products.
+                    </p>
+
+                    <a href="#"
+                       class="card-action rounded-circle d-flex align-items-center justify-content-center">
+
+                        <i class="bi bi-arrow-up-right"></i>
+
+                    </a>
+
+                </article>
+
+            </div>
+
+
+            <!-- Accessories -->
+
+            <div class="col-lg-3 col-md-6"
+                 data-aos="fade-up"
+                 data-aos-delay="250">
+
+                <article class="service-item">
+
+                    <span class="service-icon rounded-circle">
+                        <i class="bi bi-watch"></i>
+                    </span>
+
+                    <h3>
+                        <a href="#">
+                            Accessories
+                        </a>
+                    </h3>
+
+                    <p>
+                        Find watches, wallets, jewellery
+                        and everyday accessories.
+                    </p>
+
+                    <a href="#"
+                       class="card-action rounded-circle d-flex align-items-center justify-content-center">
+
+                        <i class="bi bi-arrow-up-right"></i>
+
+                    </a>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FEATURED PRODUCTS ================= -->
+
+<section id="products" class="alt-services section">
+
+    <div class="container section-title"
+         data-aos="fade-up">
+
+        <h2>Featured <span>Products</span></h2>
+
+        <p>
+            Explore our most popular products
+        </p>
+
+    </div>
+
+
+    <div class="container">
+
+        <div class="row g-4">
+
+
+            <!-- Product 1 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="service-card"
+                     data-aos="zoom-in"
+                     data-aos-delay="100">
+
+                    <div class="card-header">
+
+                        <div class="icon-box">
+                            <i class="bi bi-headphones"></i>
+                        </div>
+
+                        <h4>Wireless Headphones</h4>
+
+                    </div>
+
+
+                    <div class="card-body">
+
+                        <div class="feature-image">
+
+                            <img src="/static/assets/img/products/headphones.jpg"
+                                 alt="Wireless Headphones"
+                                 class="img-fluid">
+
+                        </div>
+
+                        <p>
+                            Premium wireless headphones with
+                            high-quality sound and long battery life.
+                        </p>
+
+                        <h5 class="text-primary">
+                            ₹1,999
+                        </h5>
+
+                    </div>
+
+
+                    <div class="card-footer">
+
+                        <a href="#"
+                           class="btn-explore">
+
+                            Add to Cart
+                            <i class="bi bi-cart-plus"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 2 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="service-card featured"
+                     data-aos="zoom-in"
+                     data-aos-delay="200">
+
+                    <div class="card-header">
+
+                        <div class="icon-box">
+                            <i class="bi bi-smartwatch"></i>
+                        </div>
+
+                        <h4>Smart Watch</h4>
+
+                    </div>
+
+
+                    <div class="card-body">
+
+                        <div class="feature-image">
+
+                            <img src="/static/assets/img/products/watch.jpg"
+                                 alt="Smart Watch"
+                                 class="img-fluid">
+
+                        </div>
+
+                        <p>
+                            Smart fitness watch with health tracking,
+                            notifications and modern design.
+                        </p>
+
+                        <h5 class="text-primary">
+                            ₹3,499
+                        </h5>
+
+                    </div>
+
+
+                    <div class="card-footer">
+
+                        <a href="#"
+                           class="btn-explore">
+
+                            Add to Cart
+                            <i class="bi bi-cart-plus"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 3 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="service-card"
+                     data-aos="zoom-in"
+                     data-aos-delay="300">
+
+                    <div class="card-header">
+
+                        <div class="icon-box">
+                            <i class="bi bi-bag"></i>
+                        </div>
+
+                        <h4>Premium Backpack</h4>
+
+                    </div>
+
+
+                    <div class="card-body">
+
+                        <div class="feature-image">
+
+                            <img src="/static/assets/img/products/backpack.jpg"
+                                 alt="Premium Backpack"
+                                 class="img-fluid">
+
+                        </div>
+
+                        <p>
+                            Stylish and durable backpack suitable
+                            for travel, college and office.
+                        </p>
+
+                        <h5 class="text-primary">
+                            ₹1,499
+                        </h5>
+
+                    </div>
+
+
+                    <div class="card-footer">
+
+                        <a href="#"
+                           class="btn-explore">
+
+                            Add to Cart
+                            <i class="bi bi-cart-plus"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 4 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="service-card"
+                     data-aos="zoom-in"
+                     data-aos-delay="400">
+
+                    <div class="card-header">
+
+                        <div class="icon-box">
+                            <i class="bi bi-phone"></i>
+                        </div>
+
+                        <h4>Smartphone</h4>
+
+                    </div>
+
+
+                    <div class="card-body">
+
+                        <div class="feature-image">
+
+                            <img src="/static/assets/img/products/mobile.jpg"
+                                 alt="Smartphone"
+                                 class="img-fluid">
+
+                        </div>
+
+                        <p>
+                            Powerful smartphone with modern design,
+                            excellent camera and fast performance.
+                        </p>
+
+                        <h5 class="text-primary">
+                            ₹19,999
+                        </h5>
+
+                    </div>
+
+
+                    <div class="card-footer">
+
+                        <a href="#"
+                           class="btn-explore">
+
+                            Add to Cart
+                            <i class="bi bi-cart-plus"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 5 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="service-card"
+                     data-aos="zoom-in"
+                     data-aos-delay="500">
+
+                    <div class="card-header">
+
+                        <div class="icon-box">
+                            <i class="bi bi-watch"></i>
+                        </div>
+
+                        <h4>Classic Watch</h4>
+
+                    </div>
+
+
+                    <div class="card-body">
+
+                        <div class="feature-image">
+
+                            <img src="/static/assets/img/products/classic-watch.jpg"
+                                 alt="Classic Watch"
+                                 class="img-fluid">
+
+                        </div>
+
+                        <p>
+                            Elegant classic watch designed for
+                            everyday style and comfort.
+                        </p>
+
+                        <h5 class="text-primary">
+                            ₹2,299
+                        </h5>
+
+                    </div>
+
+
+                    <div class="card-footer">
+
+                        <a href="#"
+                           class="btn-explore">
+
+                            Add to Cart
+                            <i class="bi bi-cart-plus"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 6 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="service-card"
+                     data-aos="zoom-in"
+                     data-aos-delay="600">
+
+                    <div class="card-header">
+
+                        <div class="icon-box">
+                            <i class="bi bi-laptop"></i>
+                        </div>
+
+                        <h4>Laptop</h4>
+
+                    </div>
+
+
+                    <div class="card-body">
+
+                        <div class="feature-image">
+
+                            <img src="/static/assets/img/products/laptop.jpg"
+                                 alt="Laptop"
+                                 class="img-fluid">
+
+                        </div>
+
+                        <p>
+                            High-performance laptop suitable for
+                            work, study and entertainment.
+                        </p>
+
+                        <h5 class="text-primary">
+                            ₹54,999
+                        </h5>
+
+                    </div>
+
+
+                    <div class="card-footer">
+
+                        <a href="#"
+                           class="btn-explore">
+
+                            Add to Cart
+                            <i class="bi bi-cart-plus"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= WHY CHOOSE US ================= -->
+
+<section id="features" class="services section">
+
+    <div class="container section-title"
+         data-aos="fade-up">
+
+        <h2>Why <span>Choose Us</span></h2>
+
+        <p>
+            We make online shopping simple, safe and convenient.
+        </p>
+
+    </div>
+
+
+    <div class="container">
+
+        <div class="row gy-4">
+
+
+            <div class="col-lg-4 col-md-6">
+
+                <article class="service-item">
+
+                    <span class="service-icon rounded-circle">
+                        <i class="bi bi-truck"></i>
+                    </span>
+
+                    <h3>
+                        Fast <span>Delivery</span>
+                    </h3>
+
+                    <p>
+                        Get your products delivered quickly
+                        and safely to your doorstep.
+                    </p>
+
+                </article>
+
+            </div>
+
+
+            <div class="col-lg-4 col-md-6">
+
+                <article class="service-item">
+
+                    <span class="service-icon rounded-circle">
+                        <i class="bi bi-shield-check"></i>
+                    </span>
+
+                    <h3>
+                        Secure <span>Payment</span>
+                    </h3>
+
+                    <p>
+                        Your payment information is protected
+                        with secure payment methods.
+                    </p>
+
+                </article>
+
+            </div>
+
+
+            <div class="col-lg-4 col-md-6">
+
+                <article class="service-item">
+
+                    <span class="service-icon rounded-circle">
+                        <i class="bi bi-headset"></i>
+                    </span>
+
+                    <h3>
+                        Customer <span>Support</span>
+                    </h3>
+
+                    <p>
+                        Our support team is ready to help you
+                        whenever you need assistance.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SPECIAL OFFER ================= -->
+
+<section id="offer" class="alt-services section">
+
+    <div class="container">
+
+        <div class="service-card featured"
+             data-aos="zoom-in">
+
+            <div class="card-header">
+
+                <div class="icon-box">
+                    <i class="bi bi-percent"></i>
+                </div>
+
+                <h4>Special Offer</h4>
+
+            </div>
+
+
+            <div class="card-body text-center">
+
+                <h2>
+                    Get Up To <span>30% OFF</span>
+                </h2>
+
+                <p>
+                    Don't miss our exclusive deals and
+                    limited-time discounts.
+                </p>
+
+            </div>
+
+
+            <div class="card-footer">
+
+                <a href="#products"
+                   class="btn-explore">
+
+                    Shop Now
+                    <i class="bi bi-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= NEWSLETTER ================= -->
+
+<section id="newsletter" class="services section">
+
+    <div class="container section-title"
+         data-aos="fade-up">
+
+        <h2>Stay <span>Updated</span></h2>
+
+        <p>
+            Subscribe to get the latest products,
+            offers and discounts.
+        </p>
+
+    </div>
+
+
+    <div class="container">
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-7">
+
+                <form class="d-flex gap-2">
+
+                    <input type="email"
+                           class="form-control"
+                           placeholder="Enter your email address"
+                           required>
+
+                    <button type="submit"
+                            class="btn btn-primary">
+
+                        Subscribe
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+{% endblock body %}
