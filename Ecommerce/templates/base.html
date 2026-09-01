@@ -70,28 +70,32 @@
           <a href="/orders">Orders</a>
         </li>
 
+
+
+        {% comment %} login log out  section  {% endcomment %}
         <!-- Sign In Dropdown -->
         <li class="dropdown">
-          <a href="#">
+          <a href="/auth/login">
             <span>Sign-In</span>
             <i class="bi bi-chevron-down toggle-dropdown"></i>
           </a>
 
           <ul>
             <li>
-              <a href="/signup">Sign Up</a>
+              <a href="/auth/signup">Sign Up</a>
             </li>
 
             <li>
-              <a href="/login">Login</a>
+              <a href="/auth/login">Login</a>
             </li>
 
             <li>
-              <a href="/logout">Logout</a>
+              <a href="/auth/logout">Logout</a>
             </li>
           </ul>
         </li>
        
+
         <li>
           <a href="/cart">
             <i class="bi bi-cart"></i> Cart
