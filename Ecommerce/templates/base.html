@@ -119,56 +119,21 @@
   <main class="main">
 
     <!-- Hero Section -->
-    <section id="hero" class="hero section">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row align-items-center">
-          <div class="col-lg-6">
-            <div class="hero-content" data-aos="fade-up" data-aos-delay="200">
-              <h2>Welcome to <stong>Shopping Cart</stong></h2>
-              <p>Discover everything you need in one place. Shop the latest products at great prices, enjoy a smooth shopping experience, and get your favorite items delivered right to your doorstep.</p>
-              <div class="hero-btns">
-                <a href="#contact" class="btn btn-primary">Category</a>
-                <a href="#services" class="btn btn-outline"> Reviews </a>
-              </div>
-              <div class="stat-item">
-               <h3>
-               <span data-purecounter-start="0"
-               data-purecounter-end="1000"
-               data-purecounter-duration="1"
-               class="purecounter"></span>+
-               </h3>
-                <p>Products Available</p>
-               </div>
+  <section id="hero" class="hero section">
 
-              <div class="stat-item">
-               <h3>
-               <span data-purecounter-start="0"
-               data-purecounter-end="5000"
-               data-purecounter-duration="1"
-               class="purecounter"></span>+
-               </h3>
-                <p>Happy Customers</p>
-             </div>
+    <div class="container">
 
-             <div class="stat-item">
-             <h3>
-              <span data-purecounter-start="0"
-              data-purecounter-end="98"
-              data-purecounter-duration="1"
-              class="purecounter"></span>%
-              </h3>
-             <p>Customer Satisfaction</p>
-             </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="hero-image" data-aos="zoom-out" data-aos-delay="300">
-              <img src="static/assets/img/about/about-8.webp" alt="Consulting Services" class="img-fluid">
-            </div>
-          </div>
+        <div class="hero-content text-center">
+
+            {% block content %}
+            
+            {% endblock content %}
+
         </div>
-      </div>
-    </section><!-- /Hero Section -->
+
+    </div>
+
+</section><!-- /Hero Section -->
 
 
     <!-- Clients Section -->
