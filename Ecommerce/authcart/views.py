@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect 
 
 def signup(request):
-    return render (request, "authentication/signup.html")
+       return render (request, "authentication/signup.html")
 
 
 def handlelogin(request):

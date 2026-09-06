@@ -2,24 +2,27 @@
 {% block title  %}Home Page{% endblock title  %}
 {% block content %}
 
-<div class="signup-form">
+<div class="card bg-light mb-5" style="max-width: 30rem; margin: auto; padding: 20px;">
 
-    <form action="/auth/signup" method="post">
+    <h2 class="text-dark">Sign Up</h2>
+
+    
+    <form action="/auth/signup/" method="post">
         {% csrf_token %}
 
         <label for="email">Email</label>
-        <input type="email" class="form-control" id="email" name="email" required>
+        <input type="email" class="form-control p-2" id="email" name="email" required>
 
         <label for="pass1">Password</label>
-        <input type="password" class="form-control" id="pass1" name="pass1" required>
+        <input type="password" class="form-control p-2" id="pass1" name="pass1" required>
 
         <label for="pass2">Confirm Password</label>
-        <input type="password" class="form-control" id="pass2" name="pass2" required>
+        <input type="password" class="form-control p-2" id="pass2" name="pass2" required>
 
         <br>
 
-        <button type="submit" class="btn btn-primary">
-            Sign Up
+        <button type="submit" class="btn btn-dark">
+            Sign In
         </button>
 
         <br>
@@ -28,7 +31,7 @@
 
     </form>
 
-</div>
+
 
 
 
