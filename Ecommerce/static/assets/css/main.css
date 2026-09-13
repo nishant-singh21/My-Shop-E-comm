@@ -1,16 +1,4 @@
-/**
-* Template Name: eBusiness
-* Template URL: https://bootstrapmade.com/ebusiness-bootstrap-corporate-template/
-* Updated: Jun 23 2025 with Bootstrap v5.3.6
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
-/* Fonts */
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Raleway",  sans-serif;
@@ -818,7 +806,14 @@ section,
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-/* Center Hero Section */
+/* Eshop Hero Background */ 
+
+.hero { background-image: url("../../images/bgg.png");
+   background-size: cover; 
+   background-position: center; 
+   background-repeat: no-repeat;
+    min-height: 600px; display: flex;
+     align-items: center; }
 
 .hero-content {
     max-width: 900px;
@@ -830,13 +825,13 @@ section,
     font-size: 64px;
     font-weight: 700;
     margin-bottom: 25px;
-    color: #123b3f;
+    color: #2196a1;
 }
 
 .hero-content p {
     font-size: 20px;
     line-height: 1.7;
-    color: #444;
+    color: #a26f6f;
     max-width: 750px;
     margin: 0 auto 35px;
 }
