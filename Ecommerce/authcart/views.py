@@ -1,6 +1,8 @@
 from django.shortcuts import render, redirect ,HttpResponse
 
 from django.contrib.auth.models import User
+from django.contrib import messages
+
 
 def signup(request):
        if request.method=='POST':
@@ -8,12 +10,13 @@ def signup(request):
             password=request.POST['pass1']
             confirm_password=request.POST['pass2']
             if password!=confirm_password:
-                return HttpResponse("Password and confirm password are not same! Please try again")
-                # return render (request, "authentication/signup.html")
+                messages.warning(request, "Passwords do not match!")
+                return render (request, "signup.html")
 
             try: 
                  if User.objects.get(username=email):
-                      return HttpResponse("Email is already registered! Please try again")
+                      messages.error(request, "Email is already registered! Please try again")
+                      return render (request, "signup.html")
                     # return render (request, 'authentication/signup.html')
             
                
@@ -21,14 +24,15 @@ def signup(request):
                  pass 
             user= User.objects.create_user(email,email,password)
             user.save()
-            return HttpResponse("Your account has been successfully created! Please login to continue")
-            
-       return render (request, "authentication/signup.html")
+            messages.success(request, "Your account has been successfully created! Please login to continue")
+            return redirect('auth/login')
+
+       return render (request, "signup.html")
 
 
 def handlelogin(request): 
-    return render (request, "authentication/login.html")
+    return render (request, "login.html")
 
 def handlelogout(request):
-    return redirect ('/auth/login')
+    return redirect ('/login')
     

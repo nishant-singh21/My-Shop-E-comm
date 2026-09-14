@@ -2,6 +2,16 @@
 {% block title %} Sign Up {% endblock title %}
 {% block content %}
 
+{% for message in messages %}
+    <div class="alert alert-{{ message.tags}}" aleret-dismissible fade show" role="alert">
+              <strong> {{message}}</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+{% endfor %}
+
+
+
+
 <div class="card bg-light mb-5" style="max-width: 30rem; margin: auto; padding: 20px;">
 
     <h2 class="text-dark">Sign Up</h2>
